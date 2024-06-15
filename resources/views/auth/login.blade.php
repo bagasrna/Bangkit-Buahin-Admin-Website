@@ -6,14 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="title" content="Klinik OPT Tebu" />
+    <meta name="title" content="InFruit Admin" />
     <meta name="description" content="Klinik OPT Tebu adalah tools untuk opt" />
     <meta name="keywords" content="klinik opt client, tryoutkedinasan, stan, stis, ipdn, sttd" />
     <meta name="author" content="IT Klinik OPT Tebu" />
     <meta property="og:title" content="Klinik OPT Tebu" />
     <meta property="og:description" content="Klinik OPT Tebu adalah tools untuk opt" />
     <title>{{ env('APP_NAME') }}</title>
-    <link rel="shortcut icon" href="/assets/images/p3gi-logo-3.png" />
+    <link rel="shortcut icon" href="/assets/images/logo-infruit.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
@@ -34,7 +34,7 @@
                             <div class="lg:w-6/12 px-4 md:px-0">
                                 <div class="md:p-12 md:mx-6">
                                     <div class="text-center">
-                                        <img class="mx-auto w-24" src="/assets/images/p3gi-logo-3.png" alt="logo" />
+                                        <img class="mx-auto w-24" src="/assets/images/logo-infruit.png" alt="logo" />
                                         <h4 class="text-xl font-semibold mt-4 mb-12 pb-1">Selamat Datang!</h4>
                                     </div>
                                     @if ($message = Session::get('message'))
@@ -52,7 +52,7 @@
                                     <form action="/login" method="POST">
                                         @csrf
                                         <p class="mb-4">Silahkan login untuk menggunakan <span
-                                                class="font-bold text-[#007aff]">Klinik OPT Panel</span></p>
+                                                class="font-bold text-[#007aff]">InFruit Admin Panel</span></p>
                                         <div class="mb-4">
                                             <input type="email"
                                                 class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
@@ -100,9 +100,9 @@
                       #34AADC);
                     ">
                                 <div class="text-white px-4 py-6 md:p-12 md:mx-6">
-                                    <h4 class="text-xl font-semibold mb-6 text-center">Klinik OPT Management Tools</h4>
+                                    <h4 class="text-xl font-semibold mb-6 text-center">InFruit Admin Panel</h4>
                                     <p class="text-sm text-justify">
-                                        Selamat datang di Klinik OPT Management.
+                                        Selamat datang di InFruit Admin Panel.
                                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, facere. 
                                         Eum quasi dolorem provident deserunt deleniti eaque doloremque, suscipit repellendus quam quibusdam omnis beatae, aspernatur hic, autem atque maiores quas.
                                     </p>
