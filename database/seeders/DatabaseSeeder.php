@@ -11,10 +11,7 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(RolesAndPermissionsSeeder::class);
         $this->call(UserSeeder::class);
-        $this->call(HamaCategorySeeder::class);
-        $this->call(HamaSeeder::class);
         $this->call(PenyakitCategorySeeder::class);
         $this->call(PenyakitSeeder::class);
-        $this->call(GulmaSeeder::class);
     }
 }

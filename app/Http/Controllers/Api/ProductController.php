@@ -12,7 +12,7 @@ use App\Models\Penyakit;
 use App\Models\PenyakitCategory;
 use App\Traits\ApiResponse;
 
-class PenyakitController extends Controller
+class ProductController extends Controller
 {
     use ApiResponse;
 

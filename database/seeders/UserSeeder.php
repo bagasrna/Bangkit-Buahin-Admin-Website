@@ -20,9 +20,9 @@ class UserSeeder extends Seeder
         User::truncate();
 
         User::create([
-            'name' => 'klinikopt',
-            'email' => 'klinikopt@gmail.com',
-            'password' => Hash::make('klinikopt123'),
+            'name' => 'Jono Kembar',
+            'email' => 'infruit@gmail.com',
+            'password' => Hash::make('infruit123'),
         ]);
 
         Schema::enableForeignKeyConstraints();
