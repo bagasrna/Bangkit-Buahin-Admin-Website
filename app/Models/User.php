@@ -23,6 +23,11 @@ class User extends Authenticatable implements JWTSubject
         'password' => 'hashed',
     ];
 
+    public function detectionHistories()
+    {
+        return $this->hasMany(DetectionHistory::class, 'user_id');
+    }
+
     public function getJWTIdentifier()
     {
         return $this->getKey();

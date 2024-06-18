@@ -13,11 +13,6 @@ class Penyakit extends Model
     protected $guarded = ['id'];
     protected $table = 'penyakits';
 
-    public function categories()
-    {
-        return $this->belongsToMany(HamaCategory::class, 'penyakit_category_pivot', 'penyakit_id', 'penyakit_category_id');
-    }
-
     public function images()
     {
         return $this->hasMany(PenyakitImage::class, 'penyakit_id');

@@ -4,7 +4,7 @@ namespace App\Http\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class GulmaResource extends JsonResource
+class DetectionHistoryResource extends JsonResource
 {
     /**
      * Transform the resource into an array.
@@ -16,14 +16,11 @@ class GulmaResource extends JsonResource
     {
         return [
             'id' => $this->id,
-            'title' => $this->title,
-            'images' => $this->images->map(function ($image) {
-                return [
-                    'id' => $image->id,
-                    'description' => $image->description,
-                    'image' => getStorageAssetFile($image->image)
-                ];
-            }),
+            'label' => $this->label,
+            'score' => $this->score,
+            'recommendation' => $this->recommendation,
+            'image' => $this->image ?
+                getStorageAssetFile($this->image) : null,
         ];
     }
 }

@@ -4,7 +4,7 @@ namespace App\Http\Resources;
 
 use Illuminate\Http\Resources\Json\ResourceCollection;
 
-class HamaCollection extends ResourceCollection
+class DetectionHistoryCollection extends ResourceCollection
 {
     /**
      * Transform the resource collection into an array.
@@ -18,10 +18,11 @@ class HamaCollection extends ResourceCollection
             'data' => $this->collection->map(function ($item) {
                 return [
                     'id' => $item->id,
-                    'title' => $item->title,
-                    'description' => $item->description,
-                    'background_image' => $item->background_image
-                        ? getStorageAssetFile($item->background_image) : null,
+                    'label' => $item->label,
+                    'score' => $item->score,
+                    'recommendation' => $item->recommendation,
+                    'image' => $item->image ?
+                        getStorageAssetFile($item->image) : null,
                 ];
             }),
         ];
