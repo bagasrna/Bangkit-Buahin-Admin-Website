@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\CreateHistoryRequest;
 use App\Http\Resources\DetectionHistoryCollection;
 use App\Http\Resources\DetectionHistoryResource;
 use App\Models\DetectionHistory;
@@ -13,7 +14,7 @@ class DetectionHistoryController extends Controller
 {
     use ApiResponse;
 
-    public function createHistory(Request $request)
+    public function createHistory(CreateHistoryRequest $request)
     {
         $user = auth()->guard('api')->user();
         $history = DetectionHistory::create([
